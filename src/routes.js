@@ -1,11 +1,14 @@
 import { BrowserRouter, Route, Routes } from "react-router";
 import Initial from "./pages/initial";
 import AboutMe from "./pages/aboutMe";
+import Menu from "./components/Menu";
 
 
-function App() {
+function AppRoutes() {
   return (
     <BrowserRouter>
+      <Menu />
+
       <Routes>
         <Route path="/" element={<Initial/>} />
         <Route path="/aboutme" element={<AboutMe/>} />
@@ -15,4 +18,4 @@ function App() {
   );
 }
 
-export default App;
+export default AppRoutes;
