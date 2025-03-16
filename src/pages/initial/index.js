@@ -1,7 +1,7 @@
 import styles from "./Initial.module.css";
 
 import posts from 'json/posts.json';
-import Post from "components/Post";
+import PostCard from "components/PostCard";
 
 export default function Initial() {
    return (
@@ -9,7 +9,7 @@ export default function Initial() {
          {
             posts.map((post) => (
                <li key={post.id}>
-                  <Post post={post} />
+                  <PostCard post={post} />
                </li>
             ))
          }
